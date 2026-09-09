@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+/* ========================================
+   MATRIX BACKGROUND
+======================================== */
+
+.matrix-background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+
+    background: #020603;
+    pointer-events: none;
+}
+
+/* Fade nas laterais e nas extremidades */
+.matrix-background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(2, 6, 3, 0.95) 0%,
+            transparent 20%,
+            transparent 80%,
+            rgba(2, 6, 3, 0.98) 100%
+        ),
+        linear-gradient(
+            to right,
+            rgba(2, 6, 3, 0.9) 0%,
+            transparent 15%,
+            transparent 85%,
+            rgba(2, 6, 3, 0.9) 100%
+        );
+
+    z-index: 2;
+}
+
+/* Container das colunas */
+
+.matrix-columns {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    justify-content: space-around;
+
+    opacity: 0.7;
+}
+
+/* Cada coluna */
+
+.matrix-column {
+    position: relative;
+
+    width: 18px;
+    height: 100%;
+
+    color: #0aff35;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    white-space: pre;
+
+    opacity: 0.15;
+
+    animation:
+        matrix-fall linear infinite;
+
+    text-shadow:
+        0 0 4px rgba(0, 255, 40, 0.4);
+}
+
+/* Algumas colunas ficam mais fortes */
+
+.matrix-column:nth-child(5n) {
+    opacity: 0.3;
+}
+
+.matrix-column:nth-child(9n) {
+    opacity: 0.45;
+}
+
+.matrix-column:nth-child(13n) {
+    opacity: 0.22;
+}
+
+/* Animação */
+
+@keyframes matrix-fall {
+
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(100%);
+    }
+
+}
+
+/* ========================================
+   RESPONSIVO
+======================================== */
+
+@media (max-width: 768px) {
+
+    .matrix-column {
+        width: 12px;
+        font-size: 11px;
+    }
+
+    .matrix-column:nth-child(odd) {
+        opacity: 0.1;
+    }
+
+}

@@ -1,0 +1,764 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Igor Brasil — Desenvolvedor Full Stack</title>
+
+    <meta
+        name="description"
+        content="Portfólio de Igor Brasil, desenvolvedor Full Stack especializado em desenvolvimento web, JavaScript, TypeScript, React, Node.js e Java."
+    >
+
+    <link href ="src/style.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+<script type="module" src="/src/main.js"></script>
+
+</head>
+
+<body class="bg-zinc-950 text-zinc-100 font-sans">
+<div class="matrix-background" aria-hidden="true">
+    <div class="matrix-columns" id="matrix"></div>
+</div>
+<div class="portfolio-content">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="fixed top-0 left-0 w-full z-50 border-b border-zinc-800 bg-zinc-950/90 backdrop-blur">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <a href="#" class="text-xl font-bold">
+                Igor<span class="text-green-500">.</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm text-zinc-400">
+                <a href="#sobre" class="hover:text-white transition">Sobre</a>
+                <a href="#tecnologias" class="hover:text-white transition">Tecnologias</a>
+                <a href="#projetos" class="hover:text-white transition">Projetos</a>
+                <a href="#experiencia" class="hover:text-white transition">Experiência</a>
+                <a href="#contato" class="hover:text-white transition">Contato</a>
+            </div>
+
+            <a
+                href="https://github.com/"
+                target="_blank"
+                class="hidden sm:block border border-zinc-700 px-4 py-2 rounded-lg text-sm hover:bg-zinc-800 transition"
+            >
+                GitHub
+            </a>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="min-h-screen flex items-center pt-24">
+            <div class="max-w-6xl mx-auto px-6 w-full">
+                <div class = "flex flex-col md:flex-row items-center gap-12">
+                <div class="max-w-3xl">
+
+                        
+                        <p class="text-green-500 font-medium mb-4">
+                            Olá, eu sou
+                        </p>
+                        
+                        <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+                            Igor Brasil
+                        </h1>
+                        
+                        <h2 class="text-2xl md:text-4xl font-semibold text-green-500 mb-6">
+                            Desenvolvedor Full Stack
+                        </h2>
+                        
+                        <p class="text-zinc-400 text-lg leading-relaxed max-w-2xl mb-8">
+                            Desenvolvedor apaixonado por tecnologia e criação de
+                            soluções web. Trabalho com desenvolvimento frontend,
+                        backend e bancos de dados, buscando sempre escrever
+                        código simples, escalável e eficiente.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        
+                        <a
+                        href="#projetos"
+                        class="text-green-500 hover:bg-green-900 px-6 py-3 rounded-lg font-medium transition"
+                        >
+                        Ver projetos
+                    </a>
+                    
+                    <a
+                    href="#contato"
+                    class="border border-zinc-700 hover:bg-zinc-800 px-6 py-3 rounded-lg font-medium transition"
+                    >
+                    Entre em contato
+                </a>
+                
+            </div>
+        </div>
+        
+            <figure class="shrink-0 flex justify-center md:justify-end">
+                <img src="src\assets\foto.jpg" alt="Foto de Igor Brasil" class="rounded-full w-lg h-lg object-cover border-1 border-green-500">
+            </figure>
+            
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= SOBRE ================= -->
+
+        <section id="sobre" class="py-24 border-t border-zinc-900">
+
+            <div class="max-w-6xl mx-auto px-6">
+
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+
+                    <div>
+
+                        <p class="text-green-500 font-medium mb-3">
+                            Sobre mim
+                        </p>
+
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                            Transformando ideias em soluções digitais
+                        </h2>
+
+                    </div>
+
+                    <div class="text-zinc-200 leading-relaxed space-y-5">
+
+                        <p>
+                            Sou formado em Ciência da Computação e tenho
+                            experiência com desenvolvimento de software,
+                            suporte e infraestrutura de TI e ensino de
+                            programação.
+                        </p>
+
+                        <p>
+                            Ao longo da minha trajetória tive contato com
+                            diferentes tecnologias e linguagens, incluindo
+                            JavaScript, TypeScript, React, Node.js, Java,
+                            Python, C, C# e C++.
+                        </p>
+
+                        <p>
+                            Atualmente meu foco está no desenvolvimento
+                            Full Stack e na construção de aplicações web
+                            modernas, buscando evoluir constantemente
+                            minhas habilidades técnicas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+        </section>
+
+
+        <!-- ================= TECNOLOGIAS ================= -->
+
+        <section id="tecnologias" class="py-24 bg-zinc-900/40 border-y border-zinc-900">
+
+            <div class="max-w-6xl mx-auto px-6">
+
+                <div class="mb-12">
+
+                    <p class="text-green-500 font-medium mb-3">
+                        Tecnologias
+                    </p>
+
+                    <h2 class="text-3xl md:text-4xl font-bold">
+                        Stack que utilizo
+                    </h2>
+
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+                    <div class="p-6 border border-zinc-800 rounded-xl hover:border-blue-500 transition">
+                        <h3 class="font-semibold mb-2">Frontend</h3>
+                        <p class="text-sm text-zinc-500">
+                            HTML, CSS, JavaScript, TypeScript, React, Next.js
+                        </p>
+                    </div>
+
+                    <div class="p-6 border border-zinc-800 rounded-xl hover:border-blue-500 transition">
+                        <h3 class="font-semibold mb-2">Backend</h3>
+                        <p class="text-sm text-zinc-500">
+                            Node.js, Express, Java, APIs REST
+                        </p>
+                    </div>
+
+                    <div class="p-6 border border-zinc-800 rounded-xl hover:border-blue-500 transition">
+                        <h3 class="font-semibold mb-2">Banco de dados</h3>
+                        <p class="text-sm text-zinc-500">
+                            PostgreSQL, Prisma, SQL
+                        </p>
+                    </div>
+
+                    <div class="p-6 border border-zinc-800 rounded-xl hover:border-blue-500 transition">
+                        <h3 class="font-semibold mb-2">Ferramentas</h3>
+                        <p class="text-sm text-zinc-500">
+                            Git, GitHub, Docker, Jest
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJETOS ================= -->
+
+<section id="projetos" class="py-24">
+<div class="max-w-6xl mx-auto px-6">
+    <div class="relative">
+
+    <!-- Carousel -->
+    <div
+        id="projectsCarousel"
+        class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4
+               [&::-webkit-scrollbar]:hidden
+               [-ms-overflow-style:none]
+               [scrollbar:none]"
+    >
+
+        <!-- Projeto 1 -->
+        <article
+            class="group min-w-full snap-start border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-600 transition bg-black/20"
+        >
+
+            <!-- Imagem -->
+            <div class="h-80 md:h-150 bg-zinc-900 flex items-center justify-center overflow-hidden">
+
+                <img
+                    src="src/assets/Hackathon_Planner.png"
+                    alt="Hackathon Planner"
+                    class="w-full h-full object-contain p-4"
+                >
+
+            </div>
+
+            <!-- Conteúdo -->
+            <div class="p-6">
+
+                <div class="flex items-center justify-between mb-4">
+
+                    <h3 class="text-xl font-semibold">
+                        Hackathon Planner
+                    </h3>
+
+
+                </div>
+
+                <p class="text-zinc-500 text-sm leading-relaxed mb-5">
+                    Plataforma educacional desenvolvida para
+                    auxiliar professores no planejamento de aulas,
+                    turmas e conteúdos.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mb-6">
+
+                    <span class="px-3 py-1 bg-zinc-900 rounded-full text-xs">
+                        React
+                    </span>
+
+                    <span class="px-3 py-1 bg-zinc-900 rounded-full text-xs">
+                        TypeScript
+                    </span>
+
+                    <span class="px-3 py-1 bg-zinc-900 rounded-full text-xs">
+                        Node.js
+                    </span>
+
+                    <span class="px-3 py-1 bg-zinc-900 rounded-full text-xs">
+                        PostgreSQL
+                    </span>
+
+                </div>
+
+                <a
+                    href="https://github.com/IgorBR1/Hackathon-Planner"
+                    class="text-sm text-green-500 hover:text-green-300"
+                >
+                    Ver projeto →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Projeto 2 -->
+        <article
+            class="group min-w-full snap-start border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-600 transition bg-black/20"
+        >
+
+            <div class="h-80 md:h-130 bg-zinc-900 flex items-center justify-center overflow-hidden">
+
+                <img
+                    src="src/assets/image.png"
+                    alt="Detector de Vagas"
+                    class="w-full h-full object-contain p-4"
+                >
+
+            </div>
+
+            <div class="p-6">
+
+                <div class="flex items-center justify-between mb-4">
+
+                    <h3 class="text-xl font-semibold">
+                        Detector de Vagas
+                    </h3>
+
+                    
+
+                </div>
+
+                <p class="text-zinc-500 text-sm leading-relaxed mb-5">
+                    Projeto de visão computacional desenvolvido
+                    para identificar e analisar vagas disponíveis
+                    em estacionamentos.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mb-6">
+
+                    <span class="px-3 py-1 bg-zinc-900 rounded-full text-xs">
+                        Python
+                    </span>
+
+                    <span class="px-3 py-1 bg-zinc-900 rounded-full text-xs">
+                        OpenCV
+                    </span>
+
+                    <span class="px-3 py-1 bg-zinc-900 rounded-full text-xs">
+                        Computer Vision
+                    </span>
+
+                </div>
+
+                <a
+                    href="https://github.com/IgorBR1/Detector-de-Vagas_TCC-2022-UNIPAC"
+                    class="text-sm text-green-500 hover:text-green-300"
+                >
+                    Ver projeto →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Projeto 3 -->
+        <article class="group min-w-full snap-start border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-600 transition bg-black/20"
+        >
+
+            <div class="h-80 md:h-130 bg-zinc-900 flex items-center justify-center overflow-hidden">
+
+                <img
+                    src="src/assets/Ponto_de_venda.png"
+                    alt="Ponto de venda"
+                    class="w-full h-full object-contain p-2"
+                >
+
+            </div>
+
+            <div class="p-6">
+
+                <div class="flex items-center justify-between mb-4">
+
+                    <h3 class="text-xl font-semibold">
+                        Ponto de venda
+                    </h3>
+
+
+                </div>
+
+                <p class="text-zinc-500 text-sm leading-relaxed mb-5">
+                    Sistema de ponto de venda com gerenciamento
+                    de produtos, vendas e relatórios.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mb-6">
+
+                    <span class="px-3 py-1 bg-zinc-900 rounded-full text-xs">
+                        PHP
+                    </span>
+
+                    <span class="px-3 py-1 bg-zinc-900 rounded-full text-xs">
+                        Bootstrap
+                    </span>
+
+                    <span class="px-3 py-1 bg-zinc-900 rounded-full text-xs">
+                        HTMLCSS
+                    </span>
+
+                    <span class="px-3 py-1 bg-zinc-900 rounded-full text-xs">
+                        MySQL
+                    </span>
+
+                </div>
+
+                <a
+                    href="https://github.com/IgorBR1/PontoDeVenda"
+                    class="text-sm text-green-500 hover:text-green-300"
+                >
+                    Ver projeto →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Projeto 4 -->
+        <article
+                class="group min-w-full snap-start border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-600 transition bg-black/20"
+        >
+
+            <div class="h-80 md:h-130 bg-zinc-900 flex items-center justify-center overflow-hidden">
+
+                <img
+                    src="src/assets/Post-List Tech Challenge 3.png"
+                    alt="Post-List Tech Challenge 3"
+                    class="w-full h-full object-contain p-2"
+                >
+
+            </div>
+
+            <div class="p-6">
+
+                <div class="flex items-center justify-between mb-4">
+
+                    <h3 class="text-xl font-semibold">
+                        Post-List Tech Challenge 3
+                    </h3>
+
+                
+                </div>
+
+                <p class="text-zinc-500 text-sm leading-relaxed mb-5">
+                    Aplicação web desenvolvida utilizando
+                    frontend moderno, API REST e banco de dados.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mb-6">
+
+                    <span class="px-3 py-1 bg-zinc-900 rounded-full text-xs">
+                        Next.js
+                    </span>
+
+                    <span class="px-3 py-1 bg-zinc-900 rounded-full text-xs">
+                        TypeScript
+                    </span>
+
+                    <span class="px-3 py-1 bg-zinc-900 rounded-full text-xs">
+                        Node.js
+                    </span>
+
+                    <span class="px-3 py-1 bg-zinc-900 rounded-full text-xs">
+                        PostgreSQL
+                    </span>
+
+                    <span class="px-3 py-1 bg-zinc-900 rounded-full text-xs">
+                        React
+                    </span>
+
+                </div>
+
+                <a
+                    href="https://github.com/IgorBR1/Projeto3-Fiap"
+                    class="text-sm text-green-500 hover:text-green-300"
+                >
+                    Ver projeto →
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <button
+        id="prevProject"
+        class="absolute left-2 top-1/3
+               w-10 h-10
+               rounded-full
+               bg-zinc-900/90
+               border border-zinc-700
+               text-white
+               flex items-center justify-center
+               hover:bg-zinc-800
+               transition"
+    >
+        ←
+    </button>
+
+
+    <button
+        id="nextProject"
+        class="absolute right-2 top-1/3
+               w-10 h-10
+               rounded-full
+               bg-zinc-900/90
+               border border-zinc-700
+               text-white
+               flex items-center justify-center
+               hover:bg-zinc-800
+               transition"
+    >
+        →
+    </button>
+
+</div>
+        </section>
+
+        <!-- ================= EXPERIÊNCIA ================= -->
+
+        <section id="experiencia" class="py-24 bg-zinc-900/40 border-y border-zinc-900">
+
+            <div class="max-w-6xl mx-auto px-6">
+
+                <div class="mb-12">
+
+                    <p class="text-green-500 font-medium mb-3">
+                        Experiência
+                    </p>
+
+                    <h2 class="text-3xl md:text-4xl font-bold">
+                        Minha trajetória
+                    </h2>
+
+                </div>
+
+                <div class="max-w-3xl space-y-10">
+
+                    <div class="border-l border-zinc-700 pl-6">
+
+                        <span class="text-sm text-green-500">
+                            2024
+                        </span>
+
+                        <h3 class="text-xl font-semibold mt-2">
+                            Professor de Informática
+                        </h3>
+
+                        <p class="text-zinc-500 mt-3 leading-relaxed">
+                            Ensino de programação e desenvolvimento web,
+                            trabalhando com JavaScript, HTML, CSS e
+                            introdução à linguagem Java.
+                        </p>
+
+                    </div>
+
+
+                    <div class="border-l border-zinc-700 pl-6">
+
+                        <span class="text-sm text-green-500">
+                            2022
+                        </span>
+
+                        <h3 class="text-xl font-semibold mt-2">
+                            Estágio em Infraestrutura de TI
+                        </h3>
+
+                        <p class="text-zinc-500 mt-3 leading-relaxed">
+                            Suporte técnico, instalação e configuração de
+                            equipamentos, redes, impressoras e softwares,
+                            além de atendimento aos usuários.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTATO ================= -->
+
+        <section id="contato" class="py-32">
+
+            <div class="max-w-3xl mx-auto px-6 text-center">
+
+              
+
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Vamos conversar?
+                </h2>
+
+                <p class="text-zinc-500 text-lg mb-8">
+                    Estou aberto a novas oportunidades, projetos e
+                    desafios na área de tecnologia.
+                </p>
+
+                <a
+                    href="mailto:brasiligor@hotmail.com.br"
+                    class="inline-block bg-green-800 hover:bg-green-600 px-7 py-3 rounded-lg font-medium transition"
+                >
+                    Entrar em contato
+                </a>
+
+                <div class="flex justify-center gap-6 mt-8 text-sm text-zinc-500">
+
+                    <a
+                        href="https://github.com/IgorBR1"
+                        target="_blank"
+                        class="hover:text-white transition"
+                    >
+                        GitHub
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/igor-brasil42/"
+                        target="_blank"
+                        class="hover:text-white transition"
+                    >
+                        LinkedIn
+                    </a>
+
+                  
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="border-t border-zinc-900 py-8">
+
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-4 text-sm text-zinc-600">
+
+            <p>
+                © 2026 Igor Brasil. Todos os direitos reservados.
+            </p>
+
+            <p>
+                Desenvolvido com HTML + Tailwind CSS
+            </p>
+
+        </div>
+
+    </footer>
+</div>
+
+<script>
+
+const matrix = document.getElementById("matrix");
+
+const characters = "01";
+
+const columnCount = Math.floor(window.innerWidth / 22);
+
+
+function createColumn(index) {
+
+    const column = document.createElement("div");
+
+    column.classList.add("matrix-column");
+
+
+    /*
+     * Quantidade de caracteres
+     * em cada coluna
+     */
+
+    const characterCount =
+        Math.floor(window.innerHeight / 18) + 20;
+
+
+    let content = "";
+
+
+    for (let i = 0; i < characterCount; i++) {
+
+        content +=
+            characters[
+                Math.floor(
+                    Math.random() * characters.length
+                )
+            ];
+
+        content += "\n";
+    }
+
+
+    column.textContent = content;
+
+
+    /*
+     * Velocidade aleatória
+     */
+
+    const duration =
+        Math.random() * 12 + 10;
+
+
+    /*
+     * Delay aleatório
+     */
+
+    const delay =
+        Math.random() * -20;
+
+
+    column.style.animationDuration =
+        `${duration}s`;
+
+    column.style.animationDelay =
+        `${delay}s`;
+
+
+    /*
+     * Pequena variação horizontal
+     */
+
+    column.style.transform =
+        `translateX(${Math.random() * 8 - 4}px)`;
+
+
+    matrix.appendChild(column);
+}
+
+
+/*
+ * Criar colunas
+ */
+
+for (let i = 0; i < columnCount; i++) {
+
+    createColumn(i);
+
+}
+
+</script>
+</body>
+</html>
+```
