@@ -6,5 +6,5 @@ export default defineConfig({
     tailwindcss(),
   ],
 
-  base: '/igor-portfolio/',
+  base: '/portifolio-igor/',
 })
